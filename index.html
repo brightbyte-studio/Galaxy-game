@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0, user-scalabale=no">
+    <title>Galaxy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       
+<canvas id="stars"></canvas>
+
+<div id="threeContainer"></div>
+
+<div id="menu">
+     <h1>Galaxy Game</h1>
+     <button id="startBtn">Start</button>
+</div>
+ <div id="gameover">
+    <h1>Game Over</h1>
+    <div id="finalScore">Score: 0</div>
+    <button id="restartBtn">Restart</button>
+ </div>   
+<div id="hud">
+    <div id="score">Score: 0</div>
+    <div id="kills">Kills: 0</div>
+    <div id="health">Health: 100</div>
+</div>
+
+<div id="joystick">
+    <div id="stick"></div>
+ </div>
+
+<div id="ui">
+    <button id="shootBtn" title="Shoot">
+        <span class="icon">🔫</span>
+    </button>
+    <button id="warpBtn" title="Warp">
+        <span class="icon">✨</span>
+    </button>
+    <button id="pauseBtn" title="Pause">
+        <span class="icon">⏸️</span>
+    </button>
+</div>
+ 
+ <audio id="bgSound" loop>
+    <source
+src="https://cdn.pixabay.com/audio/2022/03/15/audio_space.mp3">
+ </audio>
+
+ <script
+ src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+ <script src="script.js"></script>
+
+</body> 
+</html>
